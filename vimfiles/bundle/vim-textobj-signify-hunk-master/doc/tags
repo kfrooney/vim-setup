@@ -1,0 +1,9 @@
+<Plug>(textobj-signify-hunk-i)	textobj-signify.txt	/*<Plug>(textobj-signify-hunk-i)*
+textobj-signify-hunk	textobj-signify.txt	/*textobj-signify-hunk*
+textobj-signify-hunk-changelog	textobj-signify.txt	/*textobj-signify-hunk-changelog*
+textobj-signify-hunk-contents	textobj-signify.txt	/*textobj-signify-hunk-contents*
+textobj-signify-hunk-customizing	textobj-signify.txt	/*textobj-signify-hunk-customizing*
+textobj-signify-hunk-intro	textobj-signify.txt	/*textobj-signify-hunk-intro*
+textobj-signify-hunk-key-mappings	textobj-signify.txt	/*textobj-signify-hunk-key-mappings*
+textobj-signify-hunk-requirements	textobj-signify.txt	/*textobj-signify-hunk-requirements*
+textobj-signify-hunk.txt	textobj-signify.txt	/*textobj-signify-hunk.txt*

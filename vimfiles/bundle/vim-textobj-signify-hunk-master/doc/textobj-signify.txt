@@ -1,0 +1,69 @@
+*textobj-signify-hunk.txt*   text object plugin for signify change hunks.
+
+
+                           --------------------
+                           textobj-signify-hunk
+                           --------------------
+
+version : 0.1.1
+author  : tobias pflug <tobias.pflug@gmail.com>
+rewrite : Denis Spiro <killphi@gmail.com>
+license : MIT license
+
+================================================================================
+CONTENTS                                         *textobj-signify-hunk-contents*
+
+    1. Introduction ............... |textobj-signify-hunk-intro|
+    2. Requirements ............... |textobj-signify-hunk-requirements|
+    3. Key Mapings ................ |textobj-signify-hunk-key-mappings|
+    4. Customizing ................ |textobj-signify-hunk-customizing|
+    5. Changelog .................. |textobj-signify-hunk-changelog|
+
+================================================================================
+INTRODUCTION                                        *textobj-signify-hunk-intro*
+
+*textobj-signify-hunk* is a vim plugin that provides a text object to select git
+change hunks as provided by the signify plugin. The latest version of
+this plugin can be found at:
+<https://github.com/killphi/vim-textobj-signify-hunk>
+
+The signify plugin parses git diff output and sets signs to highlight where
+lines have been added/removed/changed. This plugin uses this information to
+provide a hunk text object so that you can select individual change hunks.
+
+================================================================================
+REQUIREMENTS                                 *textobj-signify-hunk-requirements*
+
+    - vim 7.2 or later
+    - textobj-user <https://github.com/vim-scripts/textobj-user.git>
+    - vim-signify <https://github.com/mhinz/vim-signify.git>
+
+
+================================================================================
+KEY MAPPINGS                                 *textobj-signify-hunk-key-mappings*
+
+*<Plug>(textobj-signify-hunk-i)* :
+Selects all lines of the change hunk the cursor currently lies within.
+
+================================================================================
+CUSTOMIZING                                   *textobj-signify-hunk-customizing*
+
+This plugin will define the following key mappings in Visual mode and
+Operator-pending mode automatically.  If you don't want these key mappings,
+define |g:textobj_comment_no_default_key_mappings| before this plugin is
+loaded (e.g. in your |vimrc|).  You can also use
+|:TextobjCommentDefaultKeyMappings| to redefine these key mappings.  This
+command doesn't override existing {lhs}s unless [!] is given.
+
+    {lhs}   {rhs}
+    -----   ------------------------------~
+    ih      <Plug>(textobj-signify-hunk-i)
+
+================================================================================
+CHANGELOG                                       *textobj-signify-hunk-changelog*
+
+v0.1    Initial release
+v0.1.1  rewrite for vim-signify
+
+
+vim:ts=4:et:ft=help:
